@@ -1,1 +1,3 @@
 # LSKit
+
+UIImageView+LSExtension使用了SDWebImage,项目中如果没有使用编译会报错
