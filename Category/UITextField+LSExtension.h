@@ -11,6 +11,6 @@
 @interface UITextField (LSExtension)
 
 /** 占位文字颜色 */
-@property (nonatomic, strong) UIColor *placeholderColor;
+@property (nonatomic, strong) UIColor *ls_placeholderColor;
 
 @end

@@ -11,7 +11,7 @@
 
 @implementation UIImageView (LSExtension)
 
-- (void)setCircleHeader:(NSString *)url pleaceholderImage:(UIImage *)pleaceholderImage {
+- (void)ls_setCircleHeader:(NSString *)url pleaceholderImage:(UIImage *)pleaceholderImage {
 
     [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:pleaceholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         if (image == nil) return;
@@ -20,7 +20,7 @@
     }];
 }
 
-- (void)setRectHeader:(NSString *)url pleaceholderImage:(UIImage *)pleaceholderImage {
+- (void)ls_setRectHeader:(NSString *)url pleaceholderImage:(UIImage *)pleaceholderImage {
     
     [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:pleaceholderImage];
 }

@@ -10,7 +10,8 @@
 #import "UIImage+LSExtension.h"
 
 @implementation UIImage (LSExtension)
-- (instancetype)circleImage {
+
+- (instancetype)ls_circleImage {
     
     // 开启上下文
     UIGraphicsBeginImageContext(self.size);
@@ -37,9 +38,9 @@
     return image;
 }
 
-+ (instancetype)circleImage:(NSString *)name {
++ (instancetype)ls_circleImage:(NSString *)name {
     
-    return [[self imageNamed:name] circleImage];
+    return [[self imageNamed:name] ls_circleImage];
 }
 
 @end

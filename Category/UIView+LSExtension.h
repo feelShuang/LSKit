@@ -23,11 +23,11 @@
 /**
  *  加载xib
  */
-+ (instancetype)viewFromXib;
++ (instancetype)ls_viewFromXib;
 
 /**
  *  判断两个view是否重叠
  */
-- (BOOL)intersectWithView:(UIView *)view;
+- (BOOL)ls_intersectWithView:(UIView *)view;
 
 @end

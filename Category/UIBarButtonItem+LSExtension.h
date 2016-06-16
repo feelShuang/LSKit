@@ -20,6 +20,6 @@
  *
  *  @return UIBarButtonItem
  */
-+ (UIBarButtonItem *)itemWithNomalImage:(UIImage *)nomalImage highlightImage:(UIImage *)highlightIamge target:(id)target action:(SEL)action;
++ (UIBarButtonItem *)ls_itemWithNomalImage:(UIImage *)nomalImage highlightImage:(UIImage *)highlightIamge target:(id)target action:(SEL)action;
 
 @end

@@ -16,7 +16,7 @@
  *  @param url               url
  *  @param pleaceholderImage 占位图片
  */
-- (void)setCircleHeader:(NSString *)url pleaceholderImage:(UIImage *)pleaceholderImage;
+- (void)ls_setCircleHeader:(NSString *)url pleaceholderImage:(UIImage *)pleaceholderImage;
 
 /**
  *  设置方形图片
@@ -24,6 +24,6 @@
  *  @param url               url
  *  @param pleaceholderImage 占位图片
  */
-- (void)setRectHeader:(NSString *)url pleaceholderImage:(UIImage *)pleaceholderImage;
+- (void)ls_setRectHeader:(NSString *)url pleaceholderImage:(UIImage *)pleaceholderImage;
 
 @end

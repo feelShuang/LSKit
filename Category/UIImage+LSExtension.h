@@ -12,8 +12,13 @@
 /**
  *  返回圆形图片
  */
-- (instancetype)circleImage;
+- (instancetype)ls_circleImage;
 
-+ (instancetype)circleImage:(NSString *)name;
+/**
+ *  类方法返回圆形图片
+ *
+ *  @param name 需要处理的图片名称
+ */
++ (instancetype)ls_circleImage:(NSString *)name;
 
 @end

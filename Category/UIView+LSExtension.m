@@ -116,12 +116,13 @@
 }
 
 #pragma mark - 加载Xib文件
-+ (instancetype)viewFromXib {
++ (instancetype)ls_viewFromXib {
     
     return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:0].lastObject;
 }
 
-- (BOOL)intersectWithView:(UIView *)view {
+- (BOOL)ls_intersectWithView:(UIView *)view {
+    
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     CGRect selfRect = [self convertRect:self.bounds toView:window];
     CGRect viewRect = [view convertRect:view.bounds toView:window];

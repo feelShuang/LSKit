@@ -12,12 +12,12 @@
 
 @implementation UITextField (LSExtension)
 
-- (void)setPlaceholderColor:(UIColor *)placeholderColor {
+- (void)setls_PlaceholderColor:(UIColor *)ls_placeholderColor {
     
-    [self setValue:placeholderColor forKeyPath:LSPlaceholderColorKey];
+    [self setValue:ls_placeholderColor forKeyPath:LSPlaceholderColorKey];
 }
 
-- (UIColor *)placeholderColor {
+- (UIColor *)ls_placeholderColor {
     
     return [self valueForKeyPath:LSPlaceholderColorKey];
 }
