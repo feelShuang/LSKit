@@ -7,7 +7,7 @@
 //
 
 #import "UIImageView+LSExtension.h"
-#import <UIImageView+WebCache.h>
+#import <UIImageView+WebCache.h> // SDWebIamge
 
 @implementation UIImageView (LSExtension)
 

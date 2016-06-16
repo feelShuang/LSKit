@@ -67,7 +67,6 @@
     return image;
 }
 
-#pragma mark 可以自由拉伸的图片
 + (UIImage *)resizedImage:(NSString *)imgName
 {
     return [self resizedImage:imgName xPos:0.5 yPos:0.5];
@@ -75,6 +74,11 @@
 
 + (UIImage *)resizedImage:(NSString *)imgName xPos:(CGFloat)xPos yPos:(CGFloat)yPos
 {
+    /**
+     *  创建一个内容可拉伸，而边角不拉伸的图片，
+     *  需要两个参数，第一个是左边不拉伸区域的宽度，第二个参数是上面不拉伸的高度。
+     *  根据设置的宽度和高度，将接下来的一个像素进行左右扩展和上下拉伸
+     */
     UIImage *image = [UIImage imageNamed:imgName];
     return [image stretchableImageWithLeftCapWidth:image.size.width * xPos topCapHeight:image.size.height * yPos];
 }
