@@ -18,7 +18,7 @@
  *  @param success 请求成功后的block回调（请求成功后需要做的操作在这个block中完成）
  *  @param failure 请求失败后的block回调（请求失败后需要做的操作在这个block中完成）
  */
-+ (void)ls_GET:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseObject))success failure:(void (^)(id error))failure;
++ (void)ls_GET:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 
 /**
  *  @function 发送一个POST请求
@@ -28,6 +28,6 @@
  *  @param success 请求成功后的block回调（请求成功后需要做的操作在这个block中完成）
  *  @param failure 请求失败后的block回调（请求失败后需要做的操作在这个block中完成）
  */
-+ (void)ls_POST:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseObject))success failure:(void (^)(id error))failure;
++ (void)ls_POST:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 
 @end
