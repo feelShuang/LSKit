@@ -35,7 +35,6 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript", nil];
     
     [manager POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
