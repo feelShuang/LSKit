@@ -17,7 +17,7 @@
 
 #define LSBaseLog(...) NSLog(__VA_ARGS__)
 #define LSFuncLog NSLog(@"-%d,%s",__LINE__,__func__)
-#define LSLog(fmt,...) NSLog((@" \n%s\n -line %d \n -" fmt),__PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define LSLog(fmt,...) NSLog((@"\n%s\n-[line %d] \n-" fmt),__PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 #else
 
