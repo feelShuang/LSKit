@@ -9,6 +9,7 @@
 #ifndef LSKit_h
 #define LSKit_h
 
+#ifdef __OBJC__ //防止和C等等语言混编出现错误，这个宏的作用只对OC文件进行拷贝定义的宏或者导入的头文件
 
 /**
  *  自定义Log日志输出
@@ -55,6 +56,6 @@
  */
 #import "UITextField+LSExtension.h"
 
-
+#endif
 
 #endif /* LSKit_h */
