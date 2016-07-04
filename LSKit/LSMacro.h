@@ -32,4 +32,10 @@
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 
+/**
+ *  判断系统版本号
+ */
+#define kSystemVersion(version) ([[UIDevice currentDevice].systemVersion floatValue] >= (version))
+
+
 #endif /* LSMacro_h */
