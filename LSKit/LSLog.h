@@ -1,6 +1,6 @@
 //
 //  LSLog.h
-//  iamgeTest
+//  LSKit
 //
 //  Created by LiuShuang on 16/6/16.
 //  Copyright © 2016年 LiuShuang. All rights reserved.

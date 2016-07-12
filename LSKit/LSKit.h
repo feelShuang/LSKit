@@ -1,6 +1,6 @@
 //
 //  LSKit.h
-//  iamgeTest
+//  LSKit
 //
 //  Created by LiuShuang on 16/6/16.
 //  Copyright © 2016年 LiuShuang. All rights reserved.
@@ -20,6 +20,16 @@
  *  各种宏定义
  */
 #import "LSMacro.h"
+
+/**
+ *  单例
+ */
+#import "LSSingleton.h"
+
+/**
+ *  判断设备类型
+ */
+#import "LSDeviceModel.h"
 
 /**
  *  UIView+LSExtension.h
@@ -55,6 +65,11 @@
  *  UITextField+LSExtension.h
  */
 #import "UITextField+LSExtension.h"
+
+/**
+ *  UIBarButtonItem+LSExtension.h
+ */
+#import "UIBarButtonItem+LSExtension.h"
 
 #endif
 
