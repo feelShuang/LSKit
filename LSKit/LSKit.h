@@ -17,6 +17,11 @@
 #import "LSLog.h"
 
 /**
+ *  网络请求工具类
+ */
+#import "LSHTTPTool.h"
+
+/**
  *  各种宏定义
  */
 #import "LSMacro.h"
@@ -30,6 +35,11 @@
  *  判断设备类型
  */
 #import "LSDeviceModel.h"
+
+/**
+ *  基本cell模型
+ */
+#import "LSBaseCellModel.h"
 
 /**
  *  UIView+LSExtension.h

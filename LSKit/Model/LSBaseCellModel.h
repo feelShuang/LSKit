@@ -1,12 +1,13 @@
 //
 //  LSBaseCellModel.h
-//  LSKitDemo
+//  LSKit
 //
 //  Created by LiuShuang on 16/7/12.
 //  Copyright © 2016年 LiuShuang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface LSBaseCellModel : NSObject
 

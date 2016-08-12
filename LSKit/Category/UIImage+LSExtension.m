@@ -13,7 +13,7 @@
 
 - (instancetype)ls_circleImage {
     
-    // 开启上下文
+    // 创建位图上下文
     UIGraphicsBeginImageContext(self.size);
     
     // 获取当前上下文
@@ -38,9 +38,43 @@
     return image;
 }
 
-+ (instancetype)ls_circleImage:(NSString *)name {
++ (instancetype)ls_imageWithCricleImage:(UIImage *)image borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor {
     
-    return [[self imageNamed:name] ls_circleImage];
+    // 图片的宽高
+    CGFloat imageW = image.size.width;
+    CGFloat imageH = imageW;
+    
+    // 开启上下文的宽高
+    CGFloat circleW = imageW + borderWidth * 2;
+    CGFloat circleH = circleW;
+    
+    // 创建位图上下文
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(circleW, circleH), NO, 0);
+    
+    // 画底部大圆
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, circleW, circleH)];
+    [borderColor set];
+    [path fill];
+    
+    // 设置裁剪区域
+    UIBezierPath *clipPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(borderWidth, borderWidth, imageW, imageH)];
+    [clipPath addClip];
+    
+    // 绘制图片
+    [image drawAtPoint:CGPointMake(borderWidth, borderWidth)];
+    
+    // 获取图片
+    UIImage *clipIamge = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 关闭上下文
+    UIGraphicsEndImageContext();
+    
+    return clipIamge;
+}
+
++ (instancetype)ls_circleImage:(UIImage *)image {
+    
+    return [self ls_imageWithCricleImage:image borderWidth:0 borderColor:nil];
 }
 
 - (instancetype)resizeableImage{
